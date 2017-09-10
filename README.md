@@ -1,8 +1,8 @@
 # logs_analysis
 
-* Psycopg2 is used a s DB-API. Python is connected to "NEWS" database through "Psycopg2". News database contains 3 tables namely **articles, authors, logs**. The internal reporting tool is used to connect to the database to discover what kind of articles the site's readers like.
+* Psycopg2 is used a s DB-API. Python is connected to "NEWS" database through "Psycopg2". News database contains 3 tables namely **articles, authors, logs**. The internal reporting tool is used to connect to the database to fetch various results.
 * The log has a database row for each time a reader loaded a web page. 
-* Python is used as frontend language. The program  won't take any input from the user. Instead, it will connect to that database, use SQL queries to analyze the log data, and print out the answers to some queries.
+* Python is used as frontend language. The program  won't take any input from the user. Instead, it will connect to that database, using SQL queries to analyze the data, to fetch the results of the queries.
 * The tool runs three reports for the following queries:
 * `1.What are the most popular three articles of all time?`
 * `2.Who are the most popular article authors of all time?`
