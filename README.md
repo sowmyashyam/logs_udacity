@@ -4,9 +4,9 @@
 * The log has a database row for each time a reader loaded a web page. 
 * Python is used as frontend language. The program  won't take any input from the user. Instead, it will connect to that database, use SQL queries to analyze the log data, and print out the answers to some queries.
 * The tool runs three reports for the following queries:
-`1.What are the most popular three articles of all time?`
-`2.Who are the most popular article authors of all time?`
-`3.On which days did more than 1% of requests lead to errors?`
+* `1.What are the most popular three articles of all time?`
+* `2.Who are the most popular article authors of all time?`
+* `3.On which days did more than 1% of requests lead to errors?`
 * We'll need to create two database views for the reporting tool to work properly:
 
 VIEW
@@ -26,7 +26,10 @@ VIEW
 3.Connect to the psql database with psql -d news.
 # To Run
 1.Launch Vagrant VM and run the commands: vagrant up, and then vagrant ssh
-1.Load the data, using  the command psql -d news -f newsdata.sql.
+1.Load the data, using  the command 
+```sh
+psql -d news -f newsdata.sql.
+```
 3.The database should contain three tables namely:
 `Authors table`
 `Articles table`
