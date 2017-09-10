@@ -31,12 +31,12 @@ VIEW
 psql -d news -f newsdata.sql.
 ```
 3.The database should contain three tables namely:
-`Authors table`
-`Articles table`
-`Log table`
+* `Authors table`
+* `Articles table`
+* `Log table`
 4.Run the python script file
-
 The expected data results will be seen.
+
 # Authors
 **Sowmya shyam** - Initial work
 
