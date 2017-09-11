@@ -3,10 +3,10 @@
 * Psycopg2 is used as DB-API. Python is connected to "NEWS" database through "Psycopg2". News database contains 3 tables namely **articles, authors, logs**. The internal reporting tool is used to connect to the database to fetch various results.
 * The log has a database row for each time a reader loaded a web page. 
 * Python is used as frontend language. The program  won't take any input from the user. Instead, it will connect to the database, using SQL queries to analyze the data and to fetch the results of the queries.
-* The tool runs three reports for the following queries:
-* `1.What are the most popular three articles of all time?`
-* `2.Who are the most popular article authors of all time?`
-* `3.On which days did more than 1% of requests lead to errors?`
+* The tool runs three reports for the following queries:<br>
+`1.What are the most popular three articles of all time?`<br>
+`2.Who are the most popular article authors of all time?`<br>
+`3.On which days did more than 1% of requests lead to errors?`<br>
 * We'll need to create database views for the reporting tool to work properly:
 ```sh
 create view numviews_view as (select title, author, count(*) as num from articles,log where log.path=CONCAT('/article/',articles.slug) group by articles.title,articles.author order by num desc);
