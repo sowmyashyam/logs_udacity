@@ -24,12 +24,12 @@ select * from numviews_view;
 * When vagrant up is finished running, you will get your shell prompt back. At this point, you can run vagrant ssh to log in to your newly installed Linux VM!
 * Connect to the psql database with psql -d news.
 # To Run
-1.Launch Vagrant VM and run the commands: vagrant up, and then vagrant ssh
-1.Load the data, using  the command 
+*Launch Vagrant VM and run the commands: vagrant up, and then vagrant ssh
+*Load the data, using  the command 
 ```sh
 psql -d news -f newsdata.sql.
 ```
-3.The database should contain three tables namely:
+* The database should contain three tables namely:
 * `Authors table`
 * `Articles table`
 * `Log table`
