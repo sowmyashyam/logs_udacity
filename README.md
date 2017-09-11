@@ -20,9 +20,9 @@ select * from numviews_view;
 ### Vagrant
 ### VirtualBox
 # Prerequisites
-1.From the 'vagrant' directory, run vagrant up.
-2.When vagrant up is finished running, you will get your shell prompt back. At this point, you can run vagrant ssh to log in to your newly installed Linux VM!
-3.Connect to the psql database with psql -d news.
+* From the 'vagrant' directory, run vagrant up.
+* When vagrant up is finished running, you will get your shell prompt back. At this point, you can run vagrant ssh to log in to your newly installed Linux VM!
+* Connect to the psql database with psql -d news.
 # To Run
 1.Launch Vagrant VM and run the commands: vagrant up, and then vagrant ssh
 1.Load the data, using  the command 
