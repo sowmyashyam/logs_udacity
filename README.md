@@ -9,8 +9,8 @@
 `3.On which days did more than 1% of requests lead to errors?`<br>
 * We'll need to create database views for the reporting tool to work properly:
 ```sh
-create view numviews_view as (select title, author, count(*) as num from articles,log where log.path=CONCAT('/article/',articles.slug) group by articles.title,articles.author order by num desc);
-select * from numviews_view;
+create view count_view as (select title, author, count(*) as num from articles,log where log.path=CONCAT('/article/',articles.slug) group by articles.title,articles.author order by num desc);
+select * from count_view;
 ```
 # Getting started:
 ### Python
