@@ -34,7 +34,7 @@ def popular_articles(query):
     output1 = make_connection(query)
     print('1.The most popular three articles of all time:')
     for i in range(len(output1)):
-        print ('\t', i + 1, '.', output1[i][0], '-', output1[i][1], 'views')
+        print('\t', i + 1, '.', output1[i][0], '-', output1[i][1], 'views')
     print("*" * 70)
 
 
@@ -43,7 +43,7 @@ def popular_authors(query):
     output2 = make_connection(query)
     print('2.The most popular authors of all time:')
     for i in range(len(output2)):
-        print ('\t', i + 1, '.', output2[i][0], '-', output2[i][1], 'views')
+        print('\t', i + 1, '.', output2[i][0], '-', output2[i][1], 'views')
     print("*" * 70)
 
 
@@ -52,8 +52,9 @@ def error_percentage(query):
     output3 = make_connection(query)
     print('3.Days in which more than 1% of requests lead to errors:')
     for i in range(len(output3)):
-        print ('\t', i + 1, '.', output3[i][0], '-', output3[i][1], '% errors')
+        print('\t', i + 1, '.', output3[i][0], '-', output3[i][1], '% errors')
     conn.close()
+    
 
 # Order of program execution
 popular_articles(query1)
